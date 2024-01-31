@@ -1,9 +1,12 @@
+import os
+import csv
+
 def write_url_data_into_csv_file(data):
     current_directory = os.getcwd()
     for k,v in data.items():
         # print(v)
 
-        csv_file_name = "my_csv.csv"
+        csv_file_name = "7561my_csv.csv"
         csv_file_path = os.path.join(current_directory, csv_file_name)
     
     header = list(v.values())[5].keys()
